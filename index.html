@@ -3,38 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kitzoon Awesome UI</title>
+    <title>Emoji Chat</title>
     <link rel="stylesheet" href="styles.css"> <!-- Create a CSS file for styling -->
 </head>
 <body>
-    <header>
-        <h1>Kitzoon UI</h1>
-        <nav>
+    <div id="chat">
+        <div id="groups">
+            <h2>Groups</h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" onclick="switchGroup('Group A')">Group A</a></li>
+                <li><a href="#" onclick="switchGroup('Group B')">Group B</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+        <div id="messages">
+            <h2>Chat</h2>
+            <div id="message-list"></div>
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+            <button onclick="clearMessages()">Clear</button>
+        </div>
+    </div>
 
-    <main>
-        <section class="feature">
-            <h2>Awesome Feature</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium urna in libero sagittis, non gravida sem fringilla.</p>
-            <a href="#" class="btn">Learn More</a>
-        </section>
-
-        <section class="feature">
-            <h2>Cool Functionality</h2>
-            <p>Phasellus viverra nisl vel odio efficitur volutpat. Sed non metus ac odio fermentum dignissim.</p>
-            <a href="#" class="btn">Explore</a>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Kitzoon. All Rights Reserved.</p>
-    </footer>
+    <script src="script.js"></script> <!-- Create a JavaScript file for functionality -->
 </body>
-          </html>
-              
+    </html>
+    
